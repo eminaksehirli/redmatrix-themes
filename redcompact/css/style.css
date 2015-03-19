@@ -1,0 +1,79 @@
+.wall-item-content {
+ display:inline-block;
+ width:90%;
+}
+
+.wall-item-author {
+ display:inline;
+ max-width:65%;
+}
+
+.wall-item-ago {
+ display:inline;
+}
+
+.wall-item-tools {
+ width:90%;
+ margin-left:48px;
+ padding-left:10px;
+ margin-top:0px;
+}
+
+.wall-item-tools-left {
+ display:inline;
+}
+
+.wall-item-tool-response {
+ margin-right:10px;
+}
+
+/*.wall-item-tools-right a {
+ margin: 0px 3px;
+}
+.comment .wall-item-tools-right a.wall-item-tools-text{
+ display:none;
+}
+.comment .wall-item-tools-right .wall-item-response-text {
+ display:none;
+}
+*/
+
+.wall-item-tools .btn {
+ /*display:none;*/
+ padding: 0px 10px;
+ font-size: 80%;
+ background-color: #fff;
+}
+
+.comment .wall-item-author,.comment .wall-item-ago,.comment .wall-item-lock{
+ display:none;
+}
+
+.comment .wall-item-content {
+ width:80%;
+ display:inline-block;
+}
+.comment .wall-item-tools {
+ width:10%;
+ /*margin-left:32px;*/
+ margin-left:0px;
+ padding-left:0px;
+ display:inline-block;
+ vertical-align:top;
+ background-color:#fff;
+}
+
+.comment .wall-item-tools-right .btn {
+ display:inline-block;
+ padding:3px;
+}
+
+
+.comment .like-rotator {
+ float:none;
+ margin:0px;
+}
+
+.comment .wall-item-content-wrapper {
+ padding: 3px 10px 3px 7px;
+}
