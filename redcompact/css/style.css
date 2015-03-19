@@ -45,21 +45,33 @@
  background-color: #fff;
 }
 
+.comment
+{
+  border-bottom: 1px dashed #D4D4D4;
+}
+
+.comment .wall-item-body
+{
+  font-size: 0.85em;
+}
+
 .comment .wall-item-author,.comment .wall-item-ago,.comment .wall-item-lock{
  display:none;
 }
 
 .comment .wall-item-content {
- width:80%;
+ width:75%;
  display:inline-block;
 }
 .comment .wall-item-tools {
- width:10%;
+ width:20%;
  /*margin-left:32px;*/
  margin-left:0px;
+ margin-top: 5px;
  padding-left:0px;
  display:inline-block;
  vertical-align:top;
+ text-align: right;
  background-color:#fff;
 }
 
