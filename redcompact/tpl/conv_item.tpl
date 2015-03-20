@@ -18,9 +18,14 @@
 							<li role="presentation"><a role="menuitem" href="{{$item.profile_url}}" title="{{$item.linktitle}}"  id="wall-item-photo-link-{{$item.id}}">{{$item.name}}</a></li>
 							<li role="presentation">
 								<a role="menuitem">
-								{{if $item.verified}}<i class="icon-ok item-verified" title="{{$item.verified}}"></i>&nbsp;{{elseif $item.forged}}<i class="icon-exclamation item-forged" title="{{$item.forged}}"></i>&nbsp;{{/if}}{{if $item.location}}<span class="wall-item-location" id="wall-item-location-{{$item.id}}">{{$item.location}},&nbsp;</span>{{/if}}<span class="autotime" title="{{$item.isotime}}">{{$item.localtime}}{{if $item.editedtime}}&nbsp;{{$item.editedtime}}{{/if}}{{if $item.expiretime}}&nbsp;{{$item.expiretime}}{{/if}}</span>{{if $item.editedtime}}&nbsp;<i class="icon-pencil"></i>{{/if}}&nbsp;{{if $item.app}}<span class="item.app">{{$item.str_app}}</span>{{/if}}
+								{{if $item.verified}}<i class="icon-ok item-verified" title="{{$item.verified}}"></i>&nbsp;{{elseif $item.forged}}<i class="icon-exclamation item-forged" title="{{$item.forged}}"></i>&nbsp;{{/if}}<span class="autotime" title="{{$item.isotime}}">{{$item.localtime}}{{if $item.editedtime}}&nbsp;{{$item.editedtime}}{{/if}}{{if $item.expiretime}}&nbsp;{{$item.expiretime}}{{/if}}</span>{{if $item.editedtime}}&nbsp;<i class="icon-pencil"></i>{{/if}}&nbsp;{{if $item.app}}<span class="item.app">{{$item.str_app}}</span>{{/if}}
 								</a>
 							</li>
+							{{if $item.location}}
+							<li role="presentation">
+								{{$item.location}}
+							</li>
+							{{/if}}
 						</ul>
 					</div>
 					<div class="wall-item-photo-end" style="clear:both">
